@@ -69,8 +69,6 @@ def llm_pipeline(file_path):
 
     PROMPT_QUESTIONS = PromptTemplate(template=prompt_template, input_variables=["text"])
 
-    
-
     REFINE_PROMPT_QUESTIONS = PromptTemplate(
         input_variables=["existing_answer", "text"],
         template=refine_template,
